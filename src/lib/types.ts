@@ -62,6 +62,7 @@ export interface DataUpdateResult {
   current_version?: string;
   available_version?: string;
   update_message?: string;
+  changelog?: string;
 }
 
 // Custom skin type for user uploaded skins

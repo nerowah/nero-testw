@@ -90,7 +90,6 @@ fn main() {
             
             // GitHub update commands
             check_github_updates,
-            pull_github_updates,
             update_champion_data_from_github,
             
             // custom skin commands
