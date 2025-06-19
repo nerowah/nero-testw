@@ -92,6 +92,8 @@ pub struct DataUpdateResult {
     pub available_version: Option<String>,
     #[serde(default)]
     pub update_message: Option<String>,
+    #[serde(default)]
+    pub changelog: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
