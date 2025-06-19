@@ -87,6 +87,7 @@ export function ChampionSearch({
       type="search"
       icon={<Search size={16} />}
       placeholder="Search champions..."
+      aria-label="Search champions by name"
       value={searchQuery}
       onFocus={() => {
         setHasFocus(true);

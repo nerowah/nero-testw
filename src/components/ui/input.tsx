@@ -37,13 +37,13 @@ function Input({
     <div className="relative flex items-center w-full">
       {iconPlacement === "left" && (
         <span className="absolute left-2 flex items-center pointer-events-none text-muted-foreground">
-          {icon}
+          <span aria-hidden="true">{icon}</span>
         </span>
       )}
       {inputElement}
       {iconPlacement === "right" && (
         <span className="absolute right-2 flex items-center pointer-events-none text-muted-foreground">
-          {icon}
+          <span aria-hidden="true">{icon}</span>
         </span>
       )}
     </div>

@@ -25,7 +25,9 @@ export function ChromaSelector({
   return (
     <div className="relative flex flex-col items-center group">
       {/* Main dot with gradient */}
-      <div
+      <button
+        type="button"
+        aria-label="Select chroma"
         className={cn(
           "size-7 rounded-full border border-primary shadow cursor-pointer"
         )}
@@ -41,10 +43,11 @@ export function ChromaSelector({
           filter: "drop-shadow(0 4px 12px rgba(0,0,0,0.18))",
         }}
       >
-        {chromas.map((chroma) => (
+        {chromas.map((chroma, index) => (
           <button
             key={chroma.id}
             type="button"
+            aria-label={`Select ${chroma.name || `chroma ${index + 1}`} chroma`}
             className={cn(
               "w-6 h-6 rounded-full border flex items-center justify-center transition-all duration-200 bg-white/10 cursor-pointer relative",
               selectedChromaId === chroma.id && "border-2 border-primary"

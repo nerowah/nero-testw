@@ -432,6 +432,7 @@ export function ThemeToneSelector() {
               opacity: isTransitioning ? 0.7 : 1,
               cursor: isTransitioning ? "not-allowed" : "pointer",
             }}
+            aria-label={`Set theme to ${t.name}`}
             title={t.name}
           />
         ))}
