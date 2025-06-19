@@ -1,0 +1,248 @@
+ pnpm tauri build
+
+> osskins@1.1.1 tauri C:\Users\MOUSSAID\Desktop\OSS
+> tauri "build"
+
+     Running beforeBuildCommand `pnpm build`
+
+> osskins@1.1.1 build C:\Users\MOUSSAID\Desktop\OSS
+> next build
+
+   ▲ Next.js 15.3.0
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 2000ms
+   Skipping linting
+ ✓ Checking validity of types
+ ✓ Collecting page data
+ ✓ Generating static pages (6/6)
+ ✓ Collecting build traces
+ ✓ Exporting (3/3)
+ ✓ Finalizing page optimization
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                    84.2 kB         212 kB
+├ ○ /_not-found                            977 B         103 kB
+├ ƒ /api/champions                         138 B         102 kB
+└ ƒ /api/custom-skins                      138 B         102 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/15-e377543f86e9f74f.js        46.6 kB
+  ├ chunks/da90b7d1-7226052724ea1421.js  53.2 kB
+  └ other shared chunks (total)          1.99 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+   Compiling osskins v1.1.1 (C:\Users\MOUSSAID\Desktop\OSS\src-tauri)
+error: failed to run custom build command for `osskins v1.1.1 (C:\Users\MOUSSAID\Desktop\OSS\src-tauri)`
+
+Caused by:
+  process didn't exit successfully: `C:\Users\MOUSSAID\Desktop\OSS\src-tauri\target\release\build\osskins-28834eebb2d9600c\build-script-build` (exit code: 1)
+  --- stdout
+  CMAKE_TOOLCHAIN_FILE_x86_64-pc-windows-msvc = None
+  CMAKE_TOOLCHAIN_FILE_x86_64_pc_windows_msvc = None
+  HOST_CMAKE_TOOLCHAIN_FILE = None
+  CMAKE_TOOLCHAIN_FILE = None
+  CMAKE_GENERATOR_x86_64-pc-windows-msvc = None
+  CMAKE_GENERATOR_x86_64_pc_windows_msvc = None
+  HOST_CMAKE_GENERATOR = None
+  CMAKE_GENERATOR = None
+  CMAKE_PREFIX_PATH_x86_64-pc-windows-msvc = None
+  CMAKE_PREFIX_PATH_x86_64_pc_windows_msvc = None
+  HOST_CMAKE_PREFIX_PATH = None
+  CMAKE_PREFIX_PATH = None
+  CMAKE_x86_64-pc-windows-msvc = None
+  CMAKE_x86_64_pc_windows_msvc = None
+  HOST_CMAKE = None
+  CMAKE = None
+  running: "cmake" "C:\\Users\\MOUSSAID\\Desktop\\OSS\\src-tauri\\./cslol-manager/cslol-tools" "-G" "Visual Studio 17 2022" "-Thost=x64" "-Ax64" "-DCMAKE_POLICY_DEFAULT_CMP0048=NEW" "-DCMAKE_POLICY_VERSION_MINIMUM=3.5" "-DCMAKE_INSTALL_PREFIX=C:\\Users\\MOUSSAID\\Desktop\\OSS\\src-tauri\\target\\release\\build\\osskins-7caaf25e820d2ad9\\out" "-DCMAKE_C_FLAGS= -nologo -MD -Brepro" "-DCMAKE_C_FLAGS_RELEASE= -nologo -MD -Brepro" "-DCMAKE_CXX_FLAGS= -nologo -MD -Brepro" "-DCMAKE_CXX_FLAGS_RELEASE= -nologo -MD -Brepro" "-DCMAKE_ASM_FLAGS= -nologo -MD -Brepro" "-DCMAKE_ASM_FLAGS_RELEASE= -nologo -MD -Brepro" "-DCMAKE_BUILD_TYPE=Release"
+  -- Configuring done (13.3s)
+  -- Generating done (0.3s)
+  -- Build files have been written to: C:/Users/MOUSSAID/Desktop/OSS/src-tauri/target/release/build/osskins-7caaf25e820d2ad9/out/build
+  running: "cmake" "--build" "C:\\Users\\MOUSSAID\\Desktop\\OSS\\src-tauri\\target\\release\\build\\osskins-7caaf25e820d2ad9\\out\\build" "--target" "mod-tools" "--config" "Release" "--parallel" "16"
+  MSBuild-Version 17.14.10+8b8e13593 für .NET Framework
+
+    xxhash.vcxproj -> C:\Users\MOUSSAID\Desktop\OSS\src-tauri\target\release\build\osskins-7caaf25e820d2ad9\out\build\dep\Release\xxhash.lib
+    miniz.vcxproj -> C:\Users\MOUSSAID\Desktop\OSS\src-tauri\target\release\build\osskins-7caaf25e820d2ad9\out\build\_deps\miniz-build\Release\miniz.lib
+    fmt.vcxproj -> C:\Users\MOUSSAID\Desktop\OSS\src-tauri\target\release\build\osskins-7caaf25e820d2ad9\out\build\dep\Release\fmt.lib
+    zstd.vcxproj -> C:\Users\MOUSSAID\Desktop\OSS\src-tauri\target\release\build\osskins-7caaf25e820d2ad9\out\build\dep\Release\zstd.lib
+    libdeflate.vcxproj -> C:\Users\MOUSSAID\Desktop\OSS\src-tauri\target\release\build\osskins-7caaf25e820d2ad9\out\build\dep\Release\libdeflate.lib
+    cslol-lib.vcxproj -> C:\Users\MOUSSAID\Desktop\OSS\src-tauri\target\release\build\osskins-7caaf25e820d2ad9\out\build\Release\cslol-lib.lib
+    mod-tools.vcxproj -> C:\Users\MOUSSAID\Desktop\OSS\src-tauri\target\release\build\osskins-7caaf25e820d2ad9\out\build\Release\mod-tools.exe
+  cargo:root=C:\Users\MOUSSAID\Desktop\OSS\src-tauri\target\release\build\osskins-7caaf25e820d2ad9\out
+  Building pre-generated overlay templates...
+  [INF] Indexing game
+  Warning: Failed to pre-build empty overlay (Exit code: Some(1))
+  cargo:rerun-if-env-changed=TAURI_CONFIG
+  cargo:rustc-check-cfg=cfg(desktop)
+  cargo:rustc-cfg=desktop
+  cargo:rustc-check-cfg=cfg(mobile)
+  cargo:rerun-if-changed=C:\Users\MOUSSAID\Desktop\OSS\src-tauri\tauri.conf.json
+  `package > version` must be a semver string
+
+  --- stderr
+  CMake Warning (dev) at C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1564 (cmake_parse_arguments):
+    The BUILD_COMMAND keyword was followed by an empty string or no value at
+    all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset the
+    ARG_BUILD_COMMAND variable rather than setting it to an empty string.
+  Call Stack (most recent call first):
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145 (cmake_language)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978:EVAL:1 (__FetchContent_Populate)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978 (cmake_language)
+    dep/CMakeLists.txt:16 (FetchContent_Populate)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  CMake Warning (dev) at C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1564 (cmake_parse_arguments):
+    The CONFIGURE_COMMAND keyword was followed by an empty string or no value
+    at all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset
+    the ARG_CONFIGURE_COMMAND variable rather than setting it to an empty
+    string.
+  Call Stack (most recent call first):
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145 (cmake_language)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978:EVAL:1 (__FetchContent_Populate)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978 (cmake_language)
+    dep/CMakeLists.txt:16 (FetchContent_Populate)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  CMake Warning (dev) at C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1564 (cmake_parse_arguments):
+    The BUILD_COMMAND keyword was followed by an empty string or no value at
+    all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset the
+    ARG_BUILD_COMMAND variable rather than setting it to an empty string.
+  Call Stack (most recent call first):
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145 (cmake_language)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978:EVAL:1 (__FetchContent_Populate)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978 (cmake_language)
+    dep/CMakeLists.txt:33 (FetchContent_Populate)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  CMake Warning (dev) at C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1564 (cmake_parse_arguments):
+    The CONFIGURE_COMMAND keyword was followed by an empty string or no value
+    at all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset
+    the ARG_CONFIGURE_COMMAND variable rather than setting it to an empty
+    string.
+  Call Stack (most recent call first):
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145 (cmake_language)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978:EVAL:1 (__FetchContent_Populate)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978 (cmake_language)
+    dep/CMakeLists.txt:33 (FetchContent_Populate)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  CMake Warning (dev) at C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1564 (cmake_parse_arguments):
+    The BUILD_COMMAND keyword was followed by an empty string or no value at
+    all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset the
+    ARG_BUILD_COMMAND variable rather than setting it to an empty string.
+  Call Stack (most recent call first):
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145 (cmake_language)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978:EVAL:1 (__FetchContent_Populate)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978 (cmake_language)
+    dep/CMakeLists.txt:59 (FetchContent_Populate)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  CMake Warning (dev) at C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1564 (cmake_parse_arguments):
+    The CONFIGURE_COMMAND keyword was followed by an empty string or no value
+    at all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset
+    the ARG_CONFIGURE_COMMAND variable rather than setting it to an empty
+    string.
+  Call Stack (most recent call first):
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145 (cmake_language)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978:EVAL:1 (__FetchContent_Populate)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978 (cmake_language)
+    dep/CMakeLists.txt:59 (FetchContent_Populate)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  CMake Deprecation Warning at C:/Users/MOUSSAID/Desktop/OSS/src-tauri/target/release/build/osskins-7caaf25e820d2ad9/out/build/_deps/miniz-src/CMakeLists.txt:1 (cmake_minimum_required):
+    Compatibility with CMake < 3.10 will be removed from a future version of
+    CMake.
+
+    Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+    to tell CMake that the project requires at least <min> but has been updated
+    to work with policies introduced by <max> or earlier.
+
+
+  CMake Warning (dev) at C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1564 (cmake_parse_arguments):
+    The BUILD_COMMAND keyword was followed by an empty string or no value at
+    all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset the
+    ARG_BUILD_COMMAND variable rather than setting it to an empty string.
+  Call Stack (most recent call first):
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145 (cmake_language)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978:EVAL:1 (__FetchContent_Populate)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978 (cmake_language)
+    dep/CMakeLists.txt:93 (FetchContent_Populate)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  CMake Warning (dev) at C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1564 (cmake_parse_arguments):
+    The CONFIGURE_COMMAND keyword was followed by an empty string or no value
+    at all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset
+    the ARG_CONFIGURE_COMMAND variable rather than setting it to an empty
+    string.
+  Call Stack (most recent call first):
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145 (cmake_language)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978:EVAL:1 (__FetchContent_Populate)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978 (cmake_language)
+    dep/CMakeLists.txt:93 (FetchContent_Populate)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  CMake Warning (dev) at C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1564 (cmake_parse_arguments):
+    The BUILD_COMMAND keyword was followed by an empty string or no value at
+    all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset the
+    ARG_BUILD_COMMAND variable rather than setting it to an empty string.
+  Call Stack (most recent call first):
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145 (cmake_language)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978:EVAL:1 (__FetchContent_Populate)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978 (cmake_language)
+    dep/CMakeLists.txt:109 (FetchContent_Populate)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  CMake Warning (dev) at C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1564 (cmake_parse_arguments):
+    The CONFIGURE_COMMAND keyword was followed by an empty string or no value
+    at all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset
+    the ARG_CONFIGURE_COMMAND variable rather than setting it to an empty
+    string.
+  Call Stack (most recent call first):
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145 (cmake_language)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978:EVAL:1 (__FetchContent_Populate)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978 (cmake_language)
+    dep/CMakeLists.txt:109 (FetchContent_Populate)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  CMake Warning (dev) at C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1564 (cmake_parse_arguments):
+    The BUILD_COMMAND keyword was followed by an empty string or no value at
+    all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset the
+    ARG_BUILD_COMMAND variable rather than setting it to an empty string.
+  Call Stack (most recent call first):
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145 (cmake_language)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978:EVAL:1 (__FetchContent_Populate)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978 (cmake_language)
+    CMakeLists.txt:112 (FetchContent_Populate)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  CMake Warning (dev) at C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1564 (cmake_parse_arguments):
+    The CONFIGURE_COMMAND keyword was followed by an empty string or no value
+    at all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset
+    the ARG_CONFIGURE_COMMAND variable rather than setting it to an empty
+    string.
+  Call Stack (most recent call first):
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:2145 (cmake_language)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978:EVAL:1 (__FetchContent_Populate)
+    C:/Program Files/CMake/share/cmake-4.0/Modules/FetchContent.cmake:1978 (cmake_language)
+    CMakeLists.txt:112 (FetchContent_Populate)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  backtrace:
+  error: Not a valid Game folder
+failed to build app: failed to build app
+       Error failed to build app: failed to build app
+ ELIFECYCLE  Command failed with exit code 1.
